@@ -1,0 +1,15 @@
+# Example of /etc/pve/firewall/cluster.fw (Datacenter firewall)
+# Homelab From Scratch #2 (It's Lucho). Easier to do from the web UI: see 02-firewall.md.
+# Rules are read top to bottom; the first match wins.
+# Port 24816 is an example: use your own SSH port.
+
+[OPTIONS]
+
+enable: 1
+policy_in: DROP
+
+[RULES]
+
+IN ACCEPT -p tcp -dport 8006 -log nolog # Web UI
+IN ACCEPT -p tcp -dport 24816 -log nolog # SSH (new port)
+IN DROP -log nolog # Everything else
