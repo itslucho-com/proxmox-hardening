@@ -4,7 +4,7 @@ Commands, settings and notes from the **Homelab From Scratch** series by [It's L
 
 ## Part 2 — Secure Your Proxmox Server: Firewall, SSH and Fail2ban
 
-▶️ Video: https://youtu.be/DPPcs6L9xIU · 📖 Written guide: _link coming soon_
+▶️ Video: https://youtu.be/DPPcs6L9xIU · 📖 Written guide: https://www.itslucho.com/writing/secure-your-proxmox-server/
 
 A fresh Proxmox install is like a house with every door and window open: anyone on your network can try to log in as `root` with just a password. In this part I close everything and leave a single door, with a key nobody can copy. Everything shown in the video is here, so you can do the same on your own Proxmox.
 
